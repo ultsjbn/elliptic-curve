@@ -13,9 +13,6 @@ def operations(a, p, P, Q):
     x2, y2 = Q
 
     # Reference is libro sa gclass, pg. 244 
-    # wala pa case for neutral element (infinity) 
-
-
 
     # Addition if P not equal to Q
     # Point addition
@@ -44,6 +41,8 @@ def operations(a, p, P, Q):
     y3 = (s * (x1-x3) - y1) % p
 
     return (x3, y3)
+
+#bale None irereturn niya pag infinity siya, gawa nalang function to print P + Q = Point at Infinity or some shit like that
 
 if __name__ == "__main__":
     # Manual input muna stinart q para madali test
